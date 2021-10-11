@@ -6,11 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>codedamn Project</title>
 		<link rel="stylesheet" href="/dist/style.css" />
+		<script src="/script.js"></script>
 	</head>
-	<body>
+	<body id="body">
+		<section class="loginpopup" id="login">
+			<div class="loginpopup__card">
+				<img
+					src="/assets/images/close.svg"
+					alt=""
+					onclick="closePopup()"
+				/>
+				<h2>Log In</h2>
+				<form action="">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="" />
+					<label for="pwd">Password</label>
+					<input type="password" name="pwd" id="" />
+					<button type="submit">Log In</button>
+				</form>
+			</div>
+			<div class="loginpopup__footer">
+				<p>
+					Don't have an account? <a href="">Start your free trail</a>
+				</p>
+			</div>
+		</section>
 		<section class="header">
 			<div class="navbar">
-				<button>Log in</button>
+				<button onclick="loginPopup()">Log in</button>
 			</div>
 			<div class="header__brand">
 				<p>Try up to one month free</p>
